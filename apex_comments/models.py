@@ -25,9 +25,9 @@ class Comment(Base):
  
     id = Column(types.Integer, primary_key=True)
     user_id = Column(types.Integer, ForeignKey(AuthUser.id), index=True)
-    submit_date = Column(types.DateTime(), default=func.now())
+    submit_date = Column(types.DateTime, default=func.now())
     comment = Column(types.Text)
-    
+
     user = relationship(AuthUser, uselist=False)
 
 class Commentable(object):

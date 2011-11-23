@@ -1,0 +1,7 @@
+from apex_comments.models import Commentable
+from apex_comments.models import Base as CommentBase
+
+class MyModel(Commentable, CommentBase):
+    __tablename__ = 'my_model'
+
+    id = Column(types.Integer, primary_key=True)
