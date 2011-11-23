@@ -1,0 +1,4 @@
+* Public/Hidden comments
+* Log comment ip address
+* Comment moderation
+* Authenticated/Unauthenticated commenters
